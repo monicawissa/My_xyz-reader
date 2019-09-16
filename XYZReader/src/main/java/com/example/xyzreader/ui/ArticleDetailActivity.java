@@ -41,7 +41,7 @@ public class ArticleDetailActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
+        //getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         setContentView(R.layout.activity_article_detail);
         getLoaderManager().initLoader(0, null, this);
         mProgressBar = findViewById(R.id.article_detail_progress_bar);
@@ -75,12 +75,12 @@ public class ArticleDetailActivity extends AppCompatActivity
         }
     }
 
-     @Override
+     /*@Override
      public boolean onSupportNavigateUp() {
          finishAfterTransition();
          return super.onSupportNavigateUp();
 
-     }
+     }*/
 
     @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {

@@ -176,11 +176,11 @@ private CoordinatorLayout mCoordinateLayout;
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                   Pair[] pairs=new Pair[1];
-                   pairs[0]=new Pair<View,String>(vh.thumbnailView,"photo_transition");
-                   ActivityOptions activityOptions=ActivityOptions.makeSceneTransitionAnimation(ArticleListActivity.this,pairs);
-                   startActivity(new Intent(Intent.ACTION_VIEW, ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))),activityOptions.toBundle());
-                   //  startActivity(new Intent(Intent.ACTION_VIEW, ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))));
+//                   Pair[] pairs=new Pair[1];
+//                   pairs[0]=new Pair<View,String>(vh.thumbnailView,"photo_transition");
+//                   ActivityOptions activityOptions=ActivityOptions.makeSceneTransitionAnimation(ArticleListActivity.this,pairs);
+//                   startActivity(new Intent(Intent.ACTION_VIEW, ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))),activityOptions.toBundle());
+                startActivity(new Intent(Intent.ACTION_VIEW, ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))));
 
                 }
             });
